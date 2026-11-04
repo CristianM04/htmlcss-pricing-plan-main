@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #080808;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 0 10px;
+}
+/* CSS */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 3. INTESTAZIONE */
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.intro h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.intro p {
+    color: #777777;
+    font-size: 16px;
+}
+
+
+/* 4. SELETTORE MENSILE E ANNUALE */
+
+.billing {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #777777;
+    font-size: 16px;
+}
+
+.billing i {
+    font-size: 32px;
+    line-height: 1;
+    color: #111111;
+}
+
+
+/* 5. CONTENITORE DELLE TRE SCHEDE */
+
+.plans {
+    display: flex;
+    gap: 32px;
+    margin-top: 86px;
+    align-items: stretch;
+}
+
+
+/* 6. SINGOLA SCHEDA */
+
+.plan {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 48px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.13);
+    min-width: 0;
+}
+
+
+
+.plan h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.plan-tag {
+    color: #777777;
+    font-size: 16px;
+}
+
+
+.price {
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 28px;
+    white-space: nowrap;
+}
+
+.currency {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.period {
+    font-size: 16px;
+    font-weight: normal;
+    color: #777777;
+}
+
+
+.discount {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.discount span {
+    background-color: #e5e5e5c1;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+/* 10. PULSANTE CHOOSE PLAN */
+
+.btn {
+    display: block;
+    background-color: #6200f5;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 22px 10px;
+    border-radius: 17px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+/* 11. LISTA DELLE CARATTERISTICHE */
+
+.features {
+    list-style: none;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    margin-bottom: 27px;
+}
+
+.features li i {
+    font-size: 27px;
+}
+
+
+/* 12. SCHEDA EVIDENZIATA: PROFESSIONAL */
+
+.plan-featured {
+    background-color: #6200f5;
+    color: #ffffff;
+}
+
+.plan-featured .plan-tag {
+    color: #ffffff;
+}
+
+.plan-featured .price {
+    color: #ffffff;
+}
+
+.plan-featured .period {
+    color: #ffffff;
+}
+
+.plan-featured .features li i {
+    color: #ffffff;
+}
+
+.plan-featured .btn {
+    background-color: #ffffff;
+    color: #6200f5;
+}
+
+.plan-featured .discount {
+    color: #ffffff;
+}
+
+
+/* 13. ADATTAMENTO AGLI SMARTPHONE */
+
+@media (max-width: 900px) {
+
+    .container {
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .plans {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .plan {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .intro h1 {
+        font-size: 34px;
+    }
+
+    .plan {
+        padding: 30px;
+    }
+
+    .price {
+        font-size: 52px;
+    }
+
+}
