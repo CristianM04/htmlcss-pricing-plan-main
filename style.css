@@ -63,6 +63,7 @@ body {
 
 .plans {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     margin-top: 86px;
     align-items: stretch;
@@ -72,7 +73,7 @@ body {
 /* 6. SINGOLA SCHEDA */
 
 .plan {
-    flex: 1;
+    flex: 1 1 300px;
     background-color: #ffffff;
     padding: 48px;
     border-radius: 25px;
@@ -194,43 +195,3 @@ body {
 }
 
 
-/* 13. ADATTAMENTO AGLI SMARTPHONE */
-
-@media (max-width: 900px) {
-
-    .container {
-        margin: 30px auto;
-        padding: 0 20px;
-    }
-
-    .intro {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .plans {
-        flex-direction: column;
-        margin-top: 40px;
-    }
-
-    .plan {
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 500px) {
-
-    .intro h1 {
-        font-size: 34px;
-    }
-
-    .plan {
-        padding: 30px;
-    }
-
-    .price {
-        font-size: 52px;
-    }
-
-}
